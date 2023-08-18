@@ -1,0 +1,280 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+@media screen and (width < 700px) {
+
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    .bg-image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 210px;
+        background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8) ),
+                    url('../src/images/kate-ibragimova-bEGTsOCnHro-unsplash.jpg');
+        filter: blur(1px);
+    }
+
+    h1 {
+        position: absolute;
+        z-index: 50;
+    }
+
+    nav {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        color: white;
+    }
+
+    .vp-logo {
+        width: 60px;
+    }
+
+    .menu {
+        font-family: 'Roboto', sans-serif;
+        cursor: pointer;
+        position: relative;
+        z-index: 10;
+    }
+
+    .menu:hover {
+        text-decoration: underline;
+    }
+
+    .menu-list {
+        display: none;
+        position: absolute;
+        z-index: 10;
+        flex-direction: column;
+        list-style-type: none;
+        top: 3rem;
+        right: 0;
+        left: 50%;
+        background: rgba(35,35,35, .95);
+        font-family: 'Roboto', sans-serif;
+        gap: 1.4rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .menu-list-toggle {
+        display: flex;
+        z-index: 10;
+    }
+
+    .menu-list-item a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .menu-list-item a:hover {
+        text-decoration: underline;
+        color: white;
+    }
+
+    .cross {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        right: 5px;
+        top: 5px;
+        border: solid 1px white;
+        height: 1.2rem;
+        width: 1.2rem;
+        cursor: pointer;
+    }
+
+    .first-line {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        width: 1.2rem;
+        height: 2px;
+        background: #fff;
+        rotate: 45deg;
+        /*transform: translate(5px, -5px);*/
+    }
+
+    .second-line {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 1.2rem;
+        height: 2px;
+        background: #fff;
+        rotate: -45deg;
+        /*transform: translate(5px, -5px);*/
+    }
+
+    .contact-link {
+        font-family: 'Roboto', sans-serif;
+        font-size: 1rem;
+        text-decoration: none;
+        color: white;
+    }
+
+    .logo-title {
+        display: flex;
+        position: relative;
+        z-index: 2;
+        width: 210px;
+        margin-top: 4rem;
+    }
+
+    .welcome-msg {
+        padding-top: .5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        z-index: 2;
+        color: white;
+    }
+
+    .title-desc {
+        font-family: 'Lato', sans-serif;
+        font-weight: 300;
+        font-style: italic;
+        font-size: 14px;
+        padding-bottom: .5rem;
+    }
+
+    .welcome {
+        font-family: 'Roboto', sans-serif;
+        font-weight: bold;
+        font-size: 1rem;
+        letter-spacing: 2px;
+    }
+
+}
+
+
+
+
+/* ==========TABLET===============================*/
+
+@media screen and (width > 760px) {
+
+    header {
+        width: 100vw;
+    }
+
+    .bg-image {
+        /*background-image: url('../src/images/kate-ibragimova-bEGTsOCnHro-unsplash.jpg');*/
+        background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8) ), no-repeat
+                    url("../src/images/kate-ibragimova-bEGTsOCnHro-unsplash.jpg");
+        background-size: cover;
+        position: absolute;
+        top: -2rem;
+        left: 0;
+        width: 100vw;
+        height: 360px;
+    }
+
+
+/* =====================NAVBAR=============================================*/
+
+
+    .header-navbar {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 10;
+        padding: 1rem 2rem;
+    }
+
+    .vp-logo {
+        width: 100px;
+    }
+
+
+
+
+    .menu:hover {
+        text-decoration: underline;
+    }
+
+    .menu-list {
+        display: flex;
+        z-index: 10;
+        font-family: 'Roboto', sans-serif;
+        list-style-type: none;
+        gap: 2rem;
+    }
+
+    .menu-list-item a {
+        text-decoration: none;
+        font-size: 1.2rem;
+        color: white;
+    }
+
+    .menu-list-item a:hover {
+        text-decoration: underline;
+        color: white;
+    }
+
+    .contact-link {
+        font-size: 1.2rem;
+        text-decoration: none;
+        color: white;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .contact-link:hover {
+        text-decoration: underline;
+    }
+
+    .logo-title {
+        position: relative;
+        z-index: 10;
+        width: 320px;
+    }
+
+    .welcome-msg {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 10;
+        color: white;
+    }
+
+    .title-desc {
+        font-family: 'Lato', sans-serif;
+        font-weight: 300;
+        font-style: italic;
+        font-size: 1.2rem;
+        padding-bottom: .5rem;
+    }
+
+    .welcome {
+        font-family: 'Roboto', sans-serif;
+        font-weight: bold;
+        font-size: 1.5rem;
+        letter-spacing: 2px;
+    }
+}

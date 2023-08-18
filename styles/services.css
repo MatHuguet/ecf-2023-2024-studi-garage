@@ -1,0 +1,44 @@
+@media screen and (width < 450px) {
+
+    .services-text {
+        font-family: 'Roboto', sans-serif;
+        padding: .5rem;
+        font-size: 12px;
+        font-weight: 600;
+    }
+
+    .white-text {
+        color: white;
+    }
+
+    .services-section1, .services-section3 {
+        background-color: #373434;
+    }
+
+    .services-section1, .services-section2, .services-section3, .services-section4, .services-section5 {
+        padding-block: 1rem;
+    }
+
+    .services-section1-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .services-section1-text {
+        padding: 1rem;
+    }
+
+    .services-section1-img img{
+        height: 200px;
+        width: 50vw;
+        object-fit: cover;
+        padding: 1rem;
+    }
+
+    .services-section2-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

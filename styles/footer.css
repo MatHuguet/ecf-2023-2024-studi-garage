@@ -1,0 +1,109 @@
+@media screen and (width < 450px) {
+
+    footer {
+        margin-top: 2rem;
+        background: #373434;
+        width: 100vw;
+    }
+
+
+    .footer-container {
+        display: grid;
+        padding-block: 1rem;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+                "logo logo"
+                "sched plan";
+    }
+
+    .footer-schedule-list {
+        width: 50vw;
+        text-align: center;
+        font-size: 14px;
+        list-style-type: none;
+        color: white;
+        grid-area: sched;
+    }
+
+    .footer-site-plan {
+        width: 50vw;
+        list-style-type: none;
+        color: white;
+        font-size: 14px;
+        grid-area: plan;
+        text-align: center;
+    }
+
+    .footer-site-plan a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .footer-site-plan a:hover {
+        text-decoration: underline;
+    }
+
+    .bottom-mark {
+        color: white;
+        font-size: 10px;
+    }
+
+    .footer-logo {
+        width: 100px;
+        grid-area: logo;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
+
+@media screen and (width > 760px) {
+    footer {
+        margin-top: 2rem;
+        background: #373434;
+        width: 100vw;
+        padding: 2rem;
+    }
+
+    .footer-container {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .footer-schedule-list {
+        font-size: 1.2rem;
+        list-style-type: none;
+        color: white;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .footer-site-plan {
+        list-style-type: none;
+        color: white;
+        font-size: 1.4rem;
+        padding-left: 4rem;
+    }
+
+    .footer-site-plan a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .footer-site-plan a:hover {
+        text-decoration: underline;
+    }
+
+    .bottom-mark {
+        color: white;
+        font-size: 10px;
+    }
+
+    .footer-logo {
+        width: 200px;
+    }
+}
+
+

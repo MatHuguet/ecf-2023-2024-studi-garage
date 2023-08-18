@@ -1,0 +1,48 @@
+button {
+    width: 200px;
+    height: 35px;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    font-weight: 700;
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*margin: 2rem;*/
+}
+
+.services-btn {
+    background: #E86E2B;
+    margin-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.services-btn:hover {
+    background: #E87A3E;
+    text-decoration: underline;
+}
+
+.review-btn {
+    background: #57718A;
+
+}
+
+.review-btn:hover {
+    background: #6E879E;
+    text-decoration: underline;
+}
+
+.contact-btn {
+    background: #E86E2B;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact-btn:hover {
+    background: #E87A3E;
+    text-decoration: underline;
+
+}
