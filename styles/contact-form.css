@@ -1,0 +1,33 @@
+.contact-form-container {
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    
+}
+
+.contact-top-text {
+    font-family: 'Lato', sans-serif;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    font-weight: bold;
+}
+
+.form-label {
+    font-family: 'Lato', sans-serif;
+
+}
+
+#message-object, .form-input{
+    border: solid 1px black;
+    width: 60vw;
+    height: 2rem;
+    margin: 0.5rem;
+    text-indent: 0.5rem;
+}
+
+.form-message-area {
+    resize: none;
+    width: 100%;
+    height: 10rem;
+}

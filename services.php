@@ -89,7 +89,7 @@ require_once './components/services-section.php';
         <div class="bg-image2"></div>
         <div class="services-section4-container">
             <div class="services-section-text">
-                <p class="services-text white-text">
+                <p class="services-text services-vehicules white-text">
                     Venez également découvrir nos véhicules d’occasions révisés, réparés et entretenus par nos soins et
                     au
                     meilleur prix, pour un confort et une satisfaction garantie !
@@ -99,7 +99,21 @@ require_once './components/services-section.php';
         </div>
     </section>
     <section class="services-section5">
-        <p>Hello</p>
+        <div class="services-section5-container">
+            <div class="services-section-text">
+                <h3 class="services-section5-title">Une urgence ? une panne ?</h3>
+                <p class="services-text services-vehicules">
+                    Contactez-nous par téléphone afin que nous puissions trouver ensemble une solution à votre problème,
+                    du dépannage à domicile au remorquage de votre véhicule. *
+                </p>
+                <p class="services-text services-vehicules asterisc">
+                    *sous réserve de disponibilité.<br>
+                    Remorquage et dépannage à domicile dans un rayon de 50km autour du garage, sous réserve de
+                    disponibilité de nos véhicules de dépannage.
+                </p>
+            </div>
+            <button class="contact-btn" onclick="window.location.href='#'">contactez-nous !</button>
+        </div>
     </section>
     <?php
 

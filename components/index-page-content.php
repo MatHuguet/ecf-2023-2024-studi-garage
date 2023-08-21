@@ -48,5 +48,7 @@ require_once './components/services-section.php';
             montrer nos véhicules d’occasion.
         </p>
     </div>
-    <button class="contact-btn" onclick="window.location.href='#'">contactez-nous !</button>
+    <?php 
+        require './components/buttons/contact-btn.php';
+    ?>
 </section>

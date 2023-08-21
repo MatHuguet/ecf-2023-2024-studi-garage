@@ -71,5 +71,24 @@
         margin-top: 3rem;
     }
 
+    .services-vehicules {
+        padding: 1rem 4rem;
+        text-align: center;
+    }
+
+    .services-section5-title {
+        font-family: 'Lato', sans-serif;
+        text-align: center;
+        font-weight: 900;
+        padding: 1rem;
+    }
+
+    .asterisc {
+        font-style: italic;
+        font-size: 10px;
+        font-weight: normal;
+        text-align: left;
+    }
+
     
 }

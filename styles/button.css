@@ -51,4 +51,6 @@ button {
     position: relative;
     z-index: 10;
     background-color: #E86E2B;
+    margin-left: auto;
+    margin-right: auto;
 }
