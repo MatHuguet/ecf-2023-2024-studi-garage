@@ -33,7 +33,7 @@ require_once './components/services-section.php';
     <!-- =======================================================================-->
     <section class="services-section1">
         <div class="services-section1-container">
-            <div class="services-section1-text">
+            <div class="services-section-text">
                 <p class="services-text white-text">
                     Au garage automobile Parrot, nous réparons votre véhicule peut importe la marque et le modèle.
                 </p>
@@ -54,7 +54,7 @@ require_once './components/services-section.php';
             <div class="services-section1-img">
                 <img src="./src/images/thisisengineering-raeng-aL2rxQhEfAM-unsplash.jpg" />
             </div>
-            <div class="services-section1-text">
+            <div class="services-section-text">
                 <p class="services-text ">
                     Besoin d’une révision ? d’un entretien ? L’équipe du garage Parrot est à votre disposition pour
                     toutes vos demandes de visites technique.
@@ -66,10 +66,41 @@ require_once './components/services-section.php';
             </div>
         </div>
     </section>
-    <!-- =======================================================================-->
-    <section class="services-section3"></section>
-    <section class="services-section4"></section>
-    <section class="services-section5"></section>
+    <!--================================================================-->
+    <section class="services-section3">
+        <div class="services-section3-container">
+            <div class="services-section-text">
+                <p class="services-text white-text">
+                    Besoin de remplacer un ou plusieurs pneus ? Envie d’anticiper vos trajets et de vérifier et/ou
+                    adapter vos pneus en conséquences ?
+                </p>
+                <p class="services-text white-text">
+                    Prenez vite rendez-vous avec nous. Le garage Parrot se fera un plaisir de vous aider !
+                </p>
+            </div>
+            <div class="services-section1-img">
+                <img src="./src/images/tekton-O_ufcLVTAYw-unsplash (1).jpg" />
+            </div>
+        </div>
+        <button class="contact-btn">prendre rendez-vous</button>
+    </section>
+    <!--=================================================================-->
+    <section class="services-section4">
+        <div class="bg-image2"></div>
+        <div class="services-section4-container">
+            <div class="services-section-text">
+                <p class="services-text white-text">
+                    Venez également découvrir nos véhicules d’occasions révisés, réparés et entretenus par nos soins et
+                    au
+                    meilleur prix, pour un confort et une satisfaction garantie !
+                </p>
+            </div>
+            <button class="vehicule-btn" onclick="window.location.href='#'">découvrir nos véhicules</button>
+        </div>
+    </section>
+    <section class="services-section5">
+        <p>Hello</p>
+    </section>
     <?php
 
 require_once './components/footer.php';

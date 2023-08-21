@@ -25,7 +25,6 @@
 <body>
 
     <?php
-    echo "<p>Hello</p>";
 require_once './components/header.php';
 require_once './components/index-page-content.php';
 require_once './components/footer.php';
