@@ -30,7 +30,7 @@ require_once './components/services-section.php';
             </div>
 
         </div>
-        <button class="review-btn" onclick="window.location.href='./services.php'">découvrir les avis clients</button>
+        <button class="review-btn" onclick="window.location.href='./review.php'">découvrir les avis clients</button>
     </div>
 </section>
 <section class="index-section3-location">

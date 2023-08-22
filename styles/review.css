@@ -1,0 +1,26 @@
+.review-container {
+    margin-top: 2rem;
+    padding: 4rem;
+    text-align: center;
+}
+
+.reviews {
+    margin: 1rem;
+}
+
+.review-infos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+}
+
+.review-name {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+
+.review-date {
+    font-family: 'Roboto', sans-serif;
+    font-size: 10px;
+}
