@@ -7,7 +7,7 @@
     </p>
     <label for="message-object" class="form-label">Objet du message</label>
     <form method="POST" action="" id="contact-form">
-        <select id="message-object">
+        <select id="message-object" required>
             <option>Sélectionnez l'objet :</option>
             <option value="rdv">Demande de rendez-vous</option>
         </select>
@@ -35,6 +35,7 @@
         <input type="checkbox" id="contact-cgu">
         <label class="form-label" for="contact-cgu">J'accepte les conditions générales</label>
 
+        <button type="submit" class="submit-btn">Valider</button>
 
 
 

@@ -20,11 +20,6 @@ button {
     margin-right: auto;
 }
 
-.services-btn:hover {
-    background: #E87A3E;
-    text-decoration: underline;
-}
-
 .review-btn {
     background: #57718A;
 
@@ -41,16 +36,22 @@ button {
     margin-right: auto;
 }
 
-.contact-btn:hover {
-    background: #E87A3E;
-    text-decoration: underline;
-
-}
-
 .vehicule-btn {
     position: relative;
     z-index: 10;
     background-color: #E86E2B;
     margin-left: auto;
     margin-right: auto;
+}
+
+.submit-btn {
+    background: #E86E2B;
+    margin-top: 1rem;
+}
+
+/* ==========HOVERING==========================*/
+
+.services-btn:hover, .contact-btn:hover:hover, .vehicule-btn:hover, .submit-btn:hover {
+    background: #E87A3E;
+    text-decoration: underline;
 }
