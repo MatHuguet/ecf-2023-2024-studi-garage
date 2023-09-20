@@ -3,7 +3,7 @@ echo 'hello';
 require './scripts/const.php';
 
 try {
-    $dbcon = new PDO(DSN, DB_USER, DB_PASS);
+    $dbcon = new PDO(DSN);
     $dbcon->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
     //Select adds

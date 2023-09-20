@@ -1,5 +1,5 @@
 <?php
-require './scripts/depl_const.php';
+require './scripts/const.php';
 
 //Connect with a new PDO:
 

@@ -28,6 +28,6 @@
 
 <?php
 
-require_once './components/header.php';
+//require_once './components/header.php';
 require_once './components/admin-components/admin-connect-form.php';
 require_once './components/footer.php';

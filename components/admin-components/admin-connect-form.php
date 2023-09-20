@@ -1,9 +1,11 @@
 <?php
-global $dbco;
-require_once './scripts/dbinit.php';
-require_once './scripts/adminConst.php';
+
+require './scripts/const.php';
+//require_once './scripts/adminConst.php';
 
 try {
+    $dbcon = new PDO(DSN);
+    $dbcon->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     //initialisation de la table administrateurs
     $initQ = "CREATE TABLE if not exists administrators(
         adminId VARCHAR(36) NOT NULL,
@@ -13,11 +15,11 @@ try {
         adminPassword VARCHAR(255) NOT NULL,
         adminRole VARCHAR(25) NOT NULL
 )";
-    $query = $dbco->query($initQ);
+    $query = $dbcon->query($initQ);
     //insert administrateur général:
     $adminInit = "INSERT IGNORE INTO administrators(adminId, adminName, adminFirstName, adminEmail, adminPassword, adminRole)
                     VALUES(UUID(), :adminname, :adminfirstname, :adminemail, :adminpass, 'administrator')";
-    $adminAddQuery = $dbco->prepare($adminInit);
+    $adminAddQuery = $dbcon->prepare($adminInit);
     $adminAddQuery->bindValue(':adminname', ADMIN_NAME);
     $adminAddQuery->bindValue(':adminfirstname', ADMIN_FIRSTNAME);
     $adminAddQuery->bindValue(':adminemail', ADMIN_MAIL);
@@ -41,7 +43,7 @@ try {
        :password,
        'employee'
         )";
-    $employeeTestAdd = $dbco->prepare($employeeTestQ);
+    $employeeTestAdd = $dbcon->prepare($employeeTestQ);
     $employeeTestAdd->bindValue(':name', strtolower('Doe'));
     $employeeTestAdd->bindValue(':firstname', strtolower('John'));
     $employeeTestAdd->bindValue(':password', password_hash('j0hnD0e', PASSWORD_DEFAULT));
