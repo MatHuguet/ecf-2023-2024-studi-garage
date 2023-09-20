@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="./styles/index-page-content.css">
     <link rel="stylesheet" href="./styles/footer.css">
     <link rel="stylesheet" href="./styles/button.css">
+    <link rel="stylesheet" href="./styles/addreview.css">
 
     <title>Donnez votre avis</title>
 </head>
@@ -26,5 +27,7 @@
 
     <?php
 require_once './components/header.php';
+
+require_once './components/add-review-form.php';
 
 require_once './components/footer.php';

@@ -25,6 +25,8 @@
 <body>
 
     <?php
-require_once './components/header.php';
+//require_once './components/header.php';
+
+require_once 'components/vehicles-display.php';
 
 require_once './components/footer.php';

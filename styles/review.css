@@ -1,6 +1,13 @@
 .review-container {
     margin-top: 2rem;
-    padding: 4rem;
+    text-align: center;
+}
+
+.review-top-text {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    padding: 4rem 1.4rem 1rem 1.4rem;
     text-align: center;
 }
 
@@ -23,4 +30,23 @@
 .review-date {
     font-family: 'Roboto', sans-serif;
     font-size: 10px;
+}
+
+.give-review-invit {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #373434;
+    width: 100vw;
+    padding: 1rem 2rem;
+    margin-top: 2rem;
+}
+
+.give-review-invit-text {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    padding: 1rem 0;
+    color: white;
+    text-align: center;
 }

@@ -1,0 +1,131 @@
+@media screen and (width < 450px) {
+    .review-container {
+        display: flex;
+        padding: 0 1rem;
+        margin-bottom: 1rem;
+        justify-content: space-between;
+        align-items: flex-end;
+        gap: 1.2rem;
+    }
+
+    .review-infos-container {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        gap: .4rem;
+
+    }
+
+    .review-name {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        font-size: 1rem;
+    }
+
+    .review-note {
+        display: flex;
+    }
+
+    .review-text {
+        margin: 0;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+        font-style: italic;
+        text-align: center;
+    }
+
+    .stars-ratio-container {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        width: 4rem;
+        background: #e5d149;
+    }
+
+    .progress {
+        position: absolute;
+        z-index: 1;
+        left: 20%;
+        top: 0;
+        right: -1%;
+        bottom: 0;
+        background: #fff;
+        transition: 1s ease;
+    }
+
+    .stars-img {
+        padding: 0;
+        margin: 0;
+        position: relative;
+        z-index: 2;
+        width: 100%;
+    }
+}
+
+
+
+
+
+@media screen and (width > 760px) {
+
+.review-container {
+    display: flex;
+    padding: 1.4rem 6rem;
+    padding-bottom: 0;
+    justify-content: center;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+.review-infos-container {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: .4rem;
+
+}
+
+.review-name {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+.review-note {
+    display: flex;
+}
+
+.review-text {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-style: italic;
+    text-align: center;
+}
+
+.stars-ratio-container {
+    position: relative;
+    width: 100px;
+    background: #e5d149;
+}
+
+.progress {
+    position: absolute;
+    z-index: 1;
+    left: 20%;
+    top: 0;
+    right: -1%;
+    bottom: 0;
+    background: #fff;
+    transition: 1s ease;
+}
+
+.stars-img {
+    padding: 0;
+    margin: 0;
+    position: relative;
+    z-index: 2;
+    width: 100%;
+}
+
+}

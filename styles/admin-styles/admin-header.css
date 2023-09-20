@@ -1,0 +1,42 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.admin-header-container {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #E86E2B;
+    padding-left: 2rem;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+.circle {
+    background-color: #000;
+    height: 65px;
+    width: 65px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+a.disconnect-text {
+    color: white;
+    padding-right: 2rem;
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+a.disconnect-text:hover {
+    text-decoration: underline;
+}
+

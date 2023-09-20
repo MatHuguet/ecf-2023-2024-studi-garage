@@ -1,0 +1,84 @@
+.action-modal {
+    width: 100vw;
+    height: auto;
+    display: none;
+}
+
+.action-modal-toggle {
+    display: flex;
+}
+
+/*
+============ADD ACCOUNT STYLE
+ */
+
+.employees-container {
+    width: 98vw;
+    display: flex;
+    justify-content: space-around;
+    background: greenyellow;
+    font-family: 'Roboto', sans-serif;
+    font-size: .8rem;
+    font-weight: bold;
+    border-bottom: solid 1px black;
+    padding: 1rem;
+}
+
+.employees-infos {
+    flex-grow: 3;
+}
+
+.employee-name-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+}
+
+.account-action {
+    display: flex;
+    justify-content: flex-end;
+    flex-grow: 1;
+    align-items: center;
+    gap: 2rem;
+}
+
+.add-employee-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+}
+
+/*  Add employees modal : */
+
+.modal-container {
+    display: none;
+    flex-direction: column;
+    width: 75vw;
+    padding: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid 1px lightgray;
+    border-radius: 6px;
+}
+
+.modal-container-toggle {
+    display: flex;
+}
+
+.add-employee-modal {
+    display: flex;
+    position: relative;
+    width: 50vw;
+    background: #fff;
+    border: solid 1px lightgray;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px 2px lightgray;
+    color: black;
+}
+
+.add-employee-top-text {
+    text-align: center;
+}
+

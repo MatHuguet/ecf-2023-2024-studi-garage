@@ -1,0 +1,142 @@
+@media screen and (width < 450px) {
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    .admin-review-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 100vw;
+        border: solid 1px white;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+    }
+
+    .review-infos {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 90%;
+    }
+
+    .newReview {
+        background-color: orange;
+        font-weight: bold;
+    }
+
+    .warningReview {
+        background-color: red;
+        font-weight: bold;
+    }
+
+    .validReview {
+        background-color: green;
+        color: white;
+    }
+
+    .eye-icon {
+        text-align: center;
+    }
+
+    .review-user-name, .review-user-date, .review-user-note {
+        flex-grow: 1;
+    }
+
+    .review-user-date {
+        text-align: right;
+    }
+
+    .review-user-note {
+        text-align: right;
+    }
+
+    table {
+        border-collapse: collapse;
+        border: solid 2px black;
+
+    }
+
+    tr {
+        border-top: solid 2px black;
+
+    }
+
+    table, tr {
+        width: 100vw;
+        text-align: center;
+    }
+
+    td, th {
+        text-align: center;
+        padding: 1rem 0;
+    }
+
+
+    /* ----------MODERATION MODAL-------------------------------------------------*/
+
+    .moderate-review-container {
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        background-color: whitesmoke;
+        padding: 2rem 0;
+    }
+
+    .moderate-review-container-toggle {
+        display: flex;
+    }
+
+    .moderate-inputs-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .review-input {
+        border: none;
+        padding: 1rem 0;
+        width: 80vw;
+        font-size: 1rem;
+        text-indent: .4rem;
+    }
+
+    .moderation-text {
+        padding-bottom: 1rem;
+    }
+
+    .review-text-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem 1rem;
+        font-family: 'Roboto', sans-serif;
+        font-style: italic;
+    }
+
+    .review-text-label {
+        font-style: normal;
+        padding: 1rem;
+    }
+
+    .review-text-delete {
+        font-style: normal;
+        padding: 0 .6rem;
+        font-family: Lato, sans-serif;
+        margin-bottom: 1rem;
+    }
+
+    .moderate-select {
+        margin-bottom: 1rem;
+        width: 80vw;
+    }
+
+    /* ---------------------------------------------------------------------------*/
+
+
+    }
+
+

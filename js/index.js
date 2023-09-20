@@ -3,8 +3,6 @@ const menu = document.getElementById('menu')
 const menuList = document.getElementById('menu-list')
 const cross = document.getElementById('cross')
 
-console.log(menu)
-console.log(menuList)
 
 
 menu.addEventListener('click', function(e) {

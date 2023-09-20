@@ -13,6 +13,23 @@ button {
     /*margin: 2rem;*/
 }
 
+
+
+.button-blk {
+    width: 200px;
+    height: 35px;
+    border: none;
+    border-radius: 3px;
+    color: black;
+    font-weight: 700;
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*margin: 2rem;*/
+}
+
 .services-btn {
     background: #E86E2B;
     margin-top: 1rem;
@@ -25,10 +42,6 @@ button {
 
 }
 
-.review-btn:hover {
-    background: #6E879E;
-    text-decoration: underline;
-}
 
 .contact-btn {
     background: #E86E2B;
@@ -47,11 +60,89 @@ button {
 .submit-btn {
     background: #E86E2B;
     margin-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.give-review-btn {
+    background: #E86E2B;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.add-btn {
+    background: #57718A;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+}
+
+.cancel-btn {
+    background: #57718A;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1rem;
+}
+
+.cancel-moderate-btn {
+    background: #57718A;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Disabled button */
+
+.submit-btn[disabled] {
+    background: grey;
+    color: darkgrey;
+}
+
+.submit-btn[disabled]:hover {
+    background: lightgray;
+    color: darkgrey;
+}
+
+.display-action-btn {
+    margin-bottom: 2rem;
+}
+
+.delete-btn {
+    font-family: Lato, sans-serif;
+    background-color: darkred;
+    color: white;
+    font-weight: 700;
+}
+
+.delete-btn:hover {
+    background-color: orangered;
+    text-decoration: underline;
+}
+
+.edit-btn {
+    background-color: #91c042;
+    color: #fff;
+    font-size: .8rem;
+    font-weight: 700;
+}
+
+input[name="empl-email"] {
+    background-color: lightgray;
 }
 
 /* ==========HOVERING==========================*/
 
-.services-btn:hover, .contact-btn:hover:hover, .vehicule-btn:hover, .submit-btn:hover {
+.services-btn:hover, .contact-btn:hover:hover, .vehicule-btn:hover, .submit-btn:hover, .give-review-btn:hover {
     background: #E87A3E;
     text-decoration: underline;
+}
+
+.add-btn:hover, .review-btn:hover, .cancel-btn:hover {
+    background: #6E879E;
+    text-decoration: underline;
+}
+
+.icon {
+    cursor: pointer;
 }

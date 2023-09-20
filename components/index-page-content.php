@@ -21,15 +21,16 @@ require_once './components/services-section.php';
             Nos clients parlent de nous !
             Découvrez leurs commentaires ou donnez le votre !
         </p>
-        <div class="stars-ratio">
-            <div class"stars-img">
-                <img class="stars" src="./src/images/stars.png" alt="star-ratio" width="200px">
-            </div>
-            <div class="stars-note">
-                <h2>4/5</h2>
-            </div>
 
-        </div>
+        <!-- INCLUDE STARS-COMPONENTS-->
+
+        <?php
+            include_once './components/stars-component.php';
+        ?>
+
+
+        <!-- ===================================================-->
+
         <button class="review-btn" onclick="window.location.href='./review.php'">découvrir les avis clients</button>
     </div>
 </section>

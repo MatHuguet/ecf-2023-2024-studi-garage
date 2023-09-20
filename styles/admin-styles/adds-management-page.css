@@ -1,0 +1,187 @@
+@media screen and (width < 450px){
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    table.add-table {
+        border-collapse: collapse;
+        border: solid 1px black;
+        width: 100vw;
+        padding: 1rem 1rem;
+        margin: 1rem 0;
+        font-family: 'Roboto', sans-serif;
+        font-size: 1rem;
+        font-weight: 500;
+    }
+
+    .adds-table-row {
+        background-color: whitesmoke;
+        text-align: center;
+        border: none;
+    }
+
+    .adds-table-items {
+        border: none;
+        padding: .4rem;
+        border-right: solid 1px black;
+    }
+
+    .edit-icon {
+        width: 24px;
+    }
+
+    .adds-add-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 2rem 0;
+    }
+
+
+    /* -------MODALS-------------*/
+
+    /* add vehicle : */
+
+    .add-vehicle, .edit-vehicle {
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .adds-add-infos {
+        font-family: Lato, sans-serif;
+    }
+
+    .add-vehicle-toggle, .edit-vehicle-toggle {
+        display: flex;
+    }
+
+    .add-vehicle-form {
+        font-family: 'Roboto', sans-serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+    }
+
+    .add-adds-input {
+        width: 90vw;
+        padding: 1rem;
+        margin-top: .5rem;
+        margin-bottom: 1rem;
+        font-family: 'Roboto', sans-serif;
+        font-size: 1rem;
+    }
+
+    .add-adds-input:valid {
+        border: solid 2px green;
+    }
+
+    .disabled-input, .disabled-input:hover, .disabled-input:focus {
+        color: black;
+        font-weight: bold;
+        font-style: italic;
+        background-color: lightgray;
+    }
+
+    .adds-add-img-text {
+        font-family: Lato, sans-serif;
+        font-weight: 700;
+        font-size: 1.2rem;
+    }
+
+    .add-vehicle-sub {
+        margin-top: 2rem;
+    }
+
+    .add-vehicle-cancel-btn {
+        margin-top: 0;
+        margin-bottom: 4rem;
+    }
+
+    .adds-form-text {
+        height: 5rem;
+        resize: none;
+
+    }
+/*
+    .img-file-input {
+        display: none;
+
+    }
+
+
+    label {
+        font-family: Lato, sans-serif;
+        font-weight: 700;
+        font-size: 1.2rem;
+        width: 90vw;
+    }
+
+    .adds-img-form-label {
+        font-family: Lato, sans-serif;
+        font-size: 1rem;
+        font-weight: 500;
+        padding: 1rem;
+        margin-top: 1rem;
+        border: solid 1px black;
+        border-radius: 3px;
+        width: 50vw;
+        background: #f2f2ff;
+        text-align: center;
+    }
+
+    .adds-img-form-label:hover {
+        font-family: Lato, sans-serif;
+        font-size: 1rem;
+        font-weight: 500;
+        padding: .5rem;
+        margin-top: 1rem;
+        border: solid 1px black;
+        border-radius: 3px;
+        width: 50vw;
+        background: #fcfcff;
+        text-align: center;
+    }
+
+*/
+
+    .img-file-input {
+        width: 80vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+
+    .adds-img-form-label {
+        visibility: hidden;
+    }
+    
+    ::-webkit-file-upload-button {
+        font-family: Lato, sans-serif;
+        font-size: .8rem;
+        font-weight: 500;
+        border: solid 1px black;
+        border-radius: 3px;
+        width: 35vw;
+        background: #f2f2ff;
+        text-align: center;
+        margin-right: 4rem;
+    }
+
+
+
+
+
+    /* edit vehicule */
+
+    .edit-vehicle-toggle {
+        display: flex;
+    }
+
+
+}

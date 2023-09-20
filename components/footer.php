@@ -18,13 +18,14 @@
                 <li class="footer-site-plan-item"><a href="#">contact</a></li>
                 <li class="footer-site-plan-item"><a href="#">plan du site</a></li>
                 <li class="footer-site-plan-item"><a href="#">confidentialité</a></li>
-                <li class="footer-site-plan-item"><a href="#">administration</a></li>
+                <li class="footer-site-plan-item"><a href="./admin-connect.php">administration</a></li>
             </ul>
     </div>
     <p class="bottom-mark">mathieu huguet - @2023</p>
 </footer>
 <script type="text/javascript" src="./js/index.js"></script>
 <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+<!--<script src="./js/stars-notation-display.js"></script>-->
 </body>
 
 </html>

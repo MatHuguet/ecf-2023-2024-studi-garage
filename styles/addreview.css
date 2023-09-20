@@ -1,0 +1,132 @@
+@media screen and (width < 450px) {
+    .contact-form-container {
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+
+    }
+
+    .contact-top-text {
+        font-family: 'Lato', sans-serif;
+        padding-top: 1rem;
+        padding-bottom: 2rem;
+        font-weight: bold;
+    }
+
+    .form-label {
+        font-family: 'Lato', sans-serif;
+        font-size: .8rem;
+
+    }
+
+    #message-object, .form-input{
+        border: solid 1px black;
+        width: 60vw;
+        height: 2rem;
+        margin: 0.5rem;
+        text-indent: 0.5rem;
+    }
+
+
+    .form-message-area {
+        resize: none;
+        width: 100%;
+        height: 10rem;
+    }
+
+    .star-select-text {
+        padding-top: 1rem;
+        padding: 1rem 2rem;
+
+    }
+/* ==========================================================================================================*/
+    /* USER REVIEW - STARS NOTATION*/
+
+    .stars-select-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        padding: 0.6rem 2rem;
+        margin-top: 1rem;
+    }
+
+
+    .star-list {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .star-list li {
+        list-style-type: none;
+    }
+
+    .star-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        width: 30px;
+        height: 30px;
+        background-image: url('../src/images/icons/star.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        transition: 1s ease;
+    }
+
+    .star-item:hover {
+        background-image: url('../src/images/icons/star-f.png');
+        transform: translateY(-0.5rem);
+        transition: .8s ease;
+    }
+
+    .active {
+        background-image: url('../src/images/icons/star-f.png');
+        transition: .8s ease;
+    }
+
+    .star-item:hover ~ .star-item:nth-child(n - 3) {
+        background-image: url('../src/images/icons/star-f.png');
+        transition: .8s ease;
+    }
+
+    .star-count {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .user-note {
+        display: flex;
+        font-family: 'Lato', sans-serif;
+        font-size: 1rem;
+        margin-right: 1rem;
+    }
+
+    .star-count-text, .ratio-text, .star-count-text:focus, .ratio-text:focus {
+        font-family: 'Roboto', sans-serif;
+        font-size: 1rem;
+        font-weight: bold;
+        border: none;
+        user-focus: none;
+        user-select: none;
+    }
+
+
+    .star-count-text {
+        border: none;
+        width: 1rem;
+
+    }
+
+
+
+
+
+
+}
