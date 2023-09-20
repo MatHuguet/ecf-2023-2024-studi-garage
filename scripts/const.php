@@ -16,6 +16,13 @@ const DSN = 'mysql://b17bb8fb1a6a05:d051faf9@eu-cdbr-west-03.cleardb.net/heroku_
 //const DSN = 'mysql://' . DB_USER . ':' . DB_PASS . '@' . HOST . '/' . DB_NAME;
 
 /*
-
-
+Utilisateur: wiky8736_matHu
+Base de données: wiky8736_garage_parrot_db
+hôte: 109.234.162.234
 */
+/*
+const DB_NAME = 'wiky8736_garage_parrot_db';
+const DB_USER = 'wiky8736_matHu';
+const DB_PASS = 'Nuggyroots89';
+const HOST = '109.234.162.234';
+const DSN = 'mysql:host=' . HOST . ';dbname=' . DB_NAME, DB_USER, DB_PASS;

@@ -6,7 +6,7 @@ Si ADMIN connecté, affichage du header admin
 <header>
     <div class="bg-image"></div>
     <?php
-        require_once "navbar.php";
+        require "navbar.php";
     ?>
 
     <div class="welcome-msg">
