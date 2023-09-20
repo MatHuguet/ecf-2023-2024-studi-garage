@@ -1,10 +1,10 @@
 <?php
-require './scripts/const.php';
+require './scripts/depl_const.php';
 
 //Connect with a new PDO:
 
 try {
-    $dbco = new PDO('mysql:host=' . HOST . ';dbname=' . DB_NAME . ';charset=utf8mb4', DB_USER, DB_PASS);
+    $dbco = new PDO(DSN);
     $dbco->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
 
