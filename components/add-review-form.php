@@ -1,5 +1,5 @@
 <?php
-include './scripts/dbinit.php';
+require './scripts/const.php';
 $visitDateFormat = date('Y-m-d');
 //=================if button submit is pressed : ===============================
 if (isset($_POST['submit'])) {
@@ -20,7 +20,13 @@ if (isset($_POST['submit'])) {
         $isValid = 0;
 
         try {
+
+            //new connexion :
+            require './scripts/dbinit.php';
+
+
             //initialize reviews table :
+
             $dbco->exec("CREATE TABLE if not exists user_reviews(
                             reviewId INT(11) AUTO_INCREMENT NOT NULL PRIMARY KEY,
                             userName VARCHAR(60) NOT NULL,

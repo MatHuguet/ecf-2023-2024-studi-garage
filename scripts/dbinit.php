@@ -1,6 +1,5 @@
 <?php
 
-require './scripts/const.php';
 
 try {
 
