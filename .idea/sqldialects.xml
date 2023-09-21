@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="SqlDialectMappings">
-    <file url="file://$PROJECT_DIR$/components/admin-components/admin-action-modals/add-account.php" dialect="MySQL" />
-    <file url="file://$PROJECT_DIR$/components/admin-components/admin-action-modals/moderation.php" dialect="GenericSQL" />
-    <file url="file://$PROJECT_DIR$/components/admin-components/admin-connect-form.php" dialect="MySQL" />
-    <file url="file://$PROJECT_DIR$/scripts/adminScripts/addEmployeeData.php" dialect="MySQL" />
-    <file url="file://$PROJECT_DIR$/scripts/adminScripts/adminConnect.php" dialect="MySQL" />
-    <file url="file://$PROJECT_DIR$/scripts/adminScripts/editAccount.php" dialect="MySQL" />
-    <file url="file://$PROJECT_DIR$/scripts/adminScripts/removeAccount.php" dialect="MySQL" />
-    <file url="file://$PROJECT_DIR$/scripts/review-form-script.php" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/components/admin-components/admin-action-modals/add-account.php" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/components/admin-components/admin-action-modals/moderation.php" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/components/admin-components/admin-connect-form.php" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/scripts/adminScripts/addEmployeeData.php" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/scripts/adminScripts/adminConnect.php" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/scripts/adminScripts/editAccount.php" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/scripts/adminScripts/removeAccount.php" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/scripts/review-form-script.php" dialect="PostgreSQL" />
     <file url="PROJECT" dialect="PostgreSQL" />
   </component>
 </project>

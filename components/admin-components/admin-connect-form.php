@@ -17,8 +17,10 @@ try {
 )";
     $query = $dbcon->query($initQ);
     //insert administrateur général:
-    $adminInit = "INSERT IGNORE INTO administrators(adminId, adminName, adminFirstName, adminEmail, adminPassword, adminRole)
-                    VALUES(UUID(), :adminname, :adminfirstname, :adminemail, :adminpass, 'administrator')";
+    $adminInit = "INSERT INTO administrators(adminId, adminName, adminFirstName, adminEmail, adminPassword, adminRole)
+                    VALUES(:uuid, :adminname, :adminfirstname, :adminemail, :adminpass, 'administrator')
+                    ON CONFLICT DO NOTHING ";
+    $adminId = uniqid("ad", true);
     $adminAddQuery = $dbcon->prepare($adminInit);
     $adminAddQuery->bindValue(':adminname', ADMIN_NAME);
     $adminAddQuery->bindValue(':adminfirstname', ADMIN_FIRSTNAME);
