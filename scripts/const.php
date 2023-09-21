@@ -34,4 +34,13 @@ const DB_PASS = '35789b6cc98a12aec3d5554cb7d5726e8b616c86988d7c3454ce26ccb8fa82b
 const DB_NAME = 'dgl19mjfthh';
 const DB_PORT = '5432';
 const DSN = 'pgsql:host=' . HOST . ';port=' . DB_PORT . ';dbname=' . DB_NAME . ';user=' . DB_USER . ';password=' . DB_PASS;
-//pgsql:host=localhost;port=5432;dbname=testdb;user=bruce;password=mypass
+
+/*
+//local pg dsn :
+const HOST = 'localhost';
+const DB_USER = 'matHu';
+const DB_PASS = 'Nuggyroots89';
+const DB_NAME = 'postgres';
+const DB_PORT = '5432';
+const DSN = 'pgsql:host=' . HOST . ';port=' . DB_PORT . ';dbname=' . DB_NAME . ';user=' . DB_USER . ';password=' . DB_PASS;
+*/

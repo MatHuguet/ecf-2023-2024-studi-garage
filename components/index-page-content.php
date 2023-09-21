@@ -3,7 +3,7 @@ require_once './components/services-section.php';
 ?>
 <section class="index-section1">
     <div class="index-section1-container">
-        <div "section1-text">
+        <div class="section1-text">
             <p class="text section1-text">
                 Découvrez notre expertise automobile à votre service à Toulouse. L’équipe du garage Parrot met tout en
                 œuvre pour l’entretien de votre véhicule afin de vous garantir une entière satisfaction à chaque sortie

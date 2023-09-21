@@ -1,7 +1,9 @@
 <?php
 ?>
 <nav class="header-navbar">
-    <img class="vp-logo" src="./src/images/logo.png" alt="logo Vincent Parrot">
+    <a class="menu-link" href="./index.php">
+        <img class="vp-logo" src="./src/images/logo.png" alt="logo Vincent Parrot">
+    </a>
     <div class="menu" id="menu">
         <p>menu</p>
     </div>

@@ -29,39 +29,32 @@ try {
                             reviewIsRead BOOLEAN NOT NULL 
                              )');
 
-    //
-
-
-} catch (PDOException $exception) {
-    echo 'Erreur :' . $exception->getMessage();
-};
-
 $rate = 1;
 ?>
 <link rel="stylesheet" href="./styles/stars.css">
 
-    <?php
+<?php
 
-    //SELECT ALL NOTES, make sum and divide by number of notes to obtain the global note:
-    $globalRate = 0;
-    $stmt = $dbco->query("SELECT SUM(reviewNote) FROM user_reviews");
-    $rateFetch = $stmt->fetch(PDO::FETCH_NUM);
-    $rateSum = $rateFetch[0];
-    //query for global ratio
-    $rateQ = $dbco->query("SELECT reviewNote FROM user_reviews")->fetchAll();
+//SELECT ALL NOTES, make sum and divide by number of notes to obtain the global note:
+$globalRate = 0;
+$stmt = $dbco->query("SELECT SUM(reviewNote) FROM user_reviews");
+$rateFetch = $stmt->fetch(PDO::FETCH_NUM);
+$rateSum = $rateFetch[0];
+//query for global ratio
+$rateQ = $dbco->query("SELECT reviewNote FROM user_reviews")->fetchAll();
 
-    if (count($rateQ) == 0){
-        $globalRate = 1;
-    } else {
-        $rateCount = count($rateQ);
-        //Putting rate value in $globalRte variable :
-        $globalRate = $rateSum / $rateCount;
-    }
-
-
+if (count($rateQ) == 0){
+    $globalRate = 1;
+} else {
+    $rateCount = count($rateQ);
+    //Putting rate value in $globalRte variable :
+    $globalRate = $rateSum / $rateCount;
+}
 
 
-        echo "<div class='review-container'>
+
+
+echo "<div class='review-container'>
  
 
         <div class='stars-ratio-container'>
@@ -76,7 +69,14 @@ $rate = 1;
     </div>";
 
 
-    ?>
+
+
+
+} catch (PDOException $exception) {
+    echo 'Erreur :' . $exception->getMessage();
+};
+
+?>
 
 
 <script src="./js/stars-progress.js"></script>

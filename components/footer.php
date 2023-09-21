@@ -6,11 +6,11 @@
             <ul class="footer-schedule-list">
                 <li class="footer-schedule-item">nos horaires d'ouverture :</li>
                 <li class="footer-list-item">lundi : fermé / 14h15 - 18h30</li>
-                <li class="footer-list-item">mardi :</li>
-                <li class="footer-list-item">mercredi :</li>
-                <li class="footer-list-item">jeudi :</li>
-                <li class="footer-list-item">vendredi :</li>
-                <li class="footer-list-item">samedi :</li>
+                <li class="footer-list-item">mardi : 08h30 - 12h30 / 14h15 - 18h30</li>
+                <li class="footer-list-item">mercredi : 08h30 - 12h30 / 14h15 - 18h30</li>
+                <li class="footer-list-item">jeudi : 08h30 - 12h30 / 14h15 - 18h30</li>
+                <li class="footer-list-item">vendredi : 08h30 - 12h30 / 14h15 - 18h30</li>
+                <li class="footer-list-item">samedi : 08h30 - 12h30 / 14h15 - 18h30</li>
                 <li class="footer-list-item">dimanche : fermé</li>
             </ul>
             <ul class="footer-site-plan">
