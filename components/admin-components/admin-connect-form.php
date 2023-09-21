@@ -22,6 +22,7 @@ try {
                     ON CONFLICT DO NOTHING ";
     $adminId = uniqid("ad", true);
     $adminAddQuery = $dbcon->prepare($adminInit);
+    $adminAddQuery->bindValue(':uuid', $adminId);
     $adminAddQuery->bindValue(':adminname', ADMIN_NAME);
     $adminAddQuery->bindValue(':adminfirstname', ADMIN_FIRSTNAME);
     $adminAddQuery->bindValue(':adminemail', ADMIN_MAIL);
