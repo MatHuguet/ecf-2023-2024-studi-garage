@@ -12,9 +12,7 @@ try {
 */
     $dbco->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     $dbco->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_BOTH);
-    if ($dbco) {
-        echo 'connexion réussie';
-    }
+
 
 } catch (PDOException $exception) {
     echo 'ERREUR :' . $exception->getMessage();
