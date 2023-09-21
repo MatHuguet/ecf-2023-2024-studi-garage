@@ -16,18 +16,18 @@ try {
 
     //initialize reviews table :
 
-    $dbco->exec("CREATE TABLE if not exists user_reviews(
-                            reviewId INT(11) AUTO_INCREMENT NOT NULL PRIMARY KEY,
+    $dbco->exec('CREATE TABLE if not exists user_reviews (
+                            reviewId INT GENERATED ALWAYS AS IDENTITY NOT NULL PRIMARY KEY,
                             userName VARCHAR(60) NOT NULL,
                             userFirstName VARCHAR(60) NOT NULL,
                             userEmail VARCHAR(60) NOT NULL,
-                            reviewNote SMALLINT(1) NOT NULL,
+                            reviewNote SMALLINT NOT NULL,
                             reviewDate VARCHAR(60) NOT NULL,
                             userVisitDate VARCHAR(60) NOT NULL,
-                            reviewText TEXT(500) NOT NULL,
+                            reviewText TEXT NOT NULL,
                             reviewIsValid BOOLEAN NOT NULL,
                             reviewIsRead BOOLEAN NOT NULL 
-                             )");
+                             )');
 
     //
 
