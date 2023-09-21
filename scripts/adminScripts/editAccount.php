@@ -7,7 +7,7 @@ if (isset($_POST['submit'])) {
         $dbco = new PDO(DSN);
         $employeeEditMail = $_POST['empl-email'];
         //SELECT UUID with email (PK) :
-        $getUUID = $dbco->prepare("SELECT adminId FROM administrators WHERE adminEmail = :adminEmail");
+        $getUUID = $dbco->prepare("SELECT adminid FROM administrators WHERE adminemail = :adminEmail");
         $getUUID->bindValue('adminEmail', $employeeEditMail);
         $getUUID->execute();
         $uuidFetch = $getUUID->fetch();
@@ -17,7 +17,7 @@ if (isset($_POST['submit'])) {
         $employeeEditName = ucfirst(strtolower(htmlspecialchars($_POST['empl-name'])));
         $employeeEditFirstname = ucfirst(strtolower(htmlspecialchars($_POST['empl-firstname'])));
         $employeeNewPassword = password_hash($_POST['empl-pass'], PASSWORD_DEFAULT);
-        $edtSql = "UPDATE administrators SET adminName = :emplName, adminFirstName = :emplFirstname, adminPassword = :emplPass 
+        $edtSql = "UPDATE administrators SET adminname = :emplName, adminfirstname = :emplFirstname, adminpassword = :emplPass 
                       WHERE adminId = :uuid";
         $rmvStmt = $dbco->prepare($edtSql);
         $rmvStmt->bindValue('emplName', $employeeEditName);

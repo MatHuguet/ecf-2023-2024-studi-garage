@@ -9,25 +9,25 @@ try {
     //CREATE table adds if not exists :
 
     $carsSql = "CREATE TABLE if not exists vehicles(
-         addID VARCHAR(255) NOT NULL PRIMARY KEY,
-         addDate VARCHAR(12) NOT NULL, 
+         addid VARCHAR(255) NOT NULL PRIMARY KEY,
+         adddate VARCHAR(12) NOT NULL, 
          brand VARCHAR(25) NOT NULL,
-         modelName VARCHAR(25) NOT NULL,
-         vehicleColor VARCHAR(25),
-         motorType VARCHAR(25) NOT NULL,
-         vehicleReleaseDate VARCHAR(12) NOT NULL,
+         modelname VARCHAR(25) NOT NULL,
+         vehiclecolor VARCHAR(25),
+         motortype VARCHAR(25) NOT NULL,
+         vehiclereleasedate VARCHAR(12) NOT NULL,
          kilometers INT NOT NULL,
-         vehicleDescription TEXT NOT NULL,
-         vehiclePrice INT NOT NULL 
+         vehicledescription TEXT NOT NULL,
+         vehicleprice INT NOT NULL 
 )";
     $dbco->exec($carsSql);
 
     //CREATE table images for adds :
     $carsImgSql = "CREATE TABLE if not exists vehiclesImages(
-        imgId VARCHAR(255) NOT NULL PRIMARY KEY,
-        addID VARCHAR(255) NOT NULL,
-        imgUrl VARCHAR(255) NOT NULL,
-        FOREIGN KEY (addID) REFERENCES vehicles(addID)
+        imgid VARCHAR(255) NOT NULL PRIMARY KEY,
+        addid VARCHAR(255) NOT NULL,
+        imgurl VARCHAR(255) NOT NULL,
+        FOREIGN KEY (addID) REFERENCES vehicles(addid)
         
 )";
     $dbco->exec($carsImgSql);
@@ -58,15 +58,15 @@ try {
 
     foreach ($getAdds as $add) {
         $brand = $add['brand'];
-        $modelName = $add['modelName'];
-        $motor = $add['motorType'];
-        $vehicleColor = $add['vehicleColor'];
-        $vehicleRelease = $add['vehicleReleaseDate'];
+        $modelName = $add['modelname'];
+        $motor = $add['motortype'];
+        $vehicleColor = $add['vehiclecolor'];
+        $vehicleRelease = $add['vehiclereleasedate'];
         $vehicleKilometers = $add['kilometers'];
-        $addDescription = $add['vehicleDescription'];
-        $vehiclePrice = $add['vehiclePrice'];
-        $addDate = $add['addDate'];
-        $addId = $add['addID'];
+        $addDescription = $add['vehicledescription'];
+        $vehiclePrice = $add['vehicleprice'];
+        $addDate = $add['adddate'];
+        $addId = $add['addid'];
 
         ?>
 <!----pass values through the table------------- -->

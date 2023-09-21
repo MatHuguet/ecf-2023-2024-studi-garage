@@ -14,19 +14,19 @@ $getEmployeePassword = $_POST['password'];
 try {
 
 
-        $dbcon = new PDO('mysql:host=localhost;dbname=garage_parrot_db', DB_USER, DB_PASS);
+        $dbcon = new PDO(DSN);
         $dbcon->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         $dbcon->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_BOTH);
 
 
 
 $setEmployeeSql = "INSERT INTO administrators(
-adminId,
-adminName,
-adminFirstName,
-adminEmail,
-adminPassword,
-adminRole)
+adminid,
+adminname,
+adminfirstname,
+adminemail,
+adminpassword,
+adminrole)
 VALUES(
 :adminid,
 :name,

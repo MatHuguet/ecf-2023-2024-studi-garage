@@ -4,9 +4,9 @@ require '../const.php';
 //new connexion :
 if (isset($_POST['submit'])) {
     try {
-        $dbco = new PDO(DSN, DB_USER, DB_PASS);
+        $dbco = new PDO(DSN);
         $employeeMail = $_POST['empl-email'];
-        $rmvSql = "DELETE FROM administrators WHERE adminEmail = :emplMail";
+        $rmvSql = "DELETE FROM administrators WHERE adminemail = :emplMail";
         $rmvStmt = $dbco->prepare($rmvSql);
         $rmvStmt->bindValue('emplMail', $employeeMail);
         $rmvStmt->execute();
