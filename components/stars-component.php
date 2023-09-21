@@ -50,7 +50,7 @@ $rate = 1;
     //query for global ratio
     $rateQ = $dbco->query("SELECT reviewNote FROM user_reviews")->fetchAll();
 
-    if (count($rateQ == 0 || count($rateQ === null || $rateQ === ''))) {
+    if (count($rateQ) == 0){
         $globalRate = 1;
     } else {
         $rateCount = count($rateQ);
