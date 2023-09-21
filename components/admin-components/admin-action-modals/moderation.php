@@ -5,14 +5,16 @@ try {
     $dbcon = new PDO(DSN);
     $dbcon->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     $dbcon->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_BOTH);
+
+    $getReviewsSql = "SELECT * FROM user_reviews";
+    $getReviews = $dbcon->query($getReviewsSql)->fetchAll();
+
 } catch (PDOException $exception) {
     echo 'Erreur de connexion : ' . $exception->getMessage();
 }
 
-$getReviewsSql = "SELECT * FROM user_reviews";
-if (!empty($dbcon)) {
-    $getReviews = $dbcon->query($getReviewsSql)->fetchAll();
-}
+
+
 
 ?>
 <link rel="stylesheet" href="../styles/admin-styles/admin-moderation.css"/>
