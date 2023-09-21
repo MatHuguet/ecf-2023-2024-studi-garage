@@ -1,6 +1,6 @@
 <?php
-require_once '../../scripts/const.php';
-require_once '../../scripts/adminConst.php';
+require '../../scripts/const.php';
+require '../../scripts/adminConst.php';
 //check if values of inputs are Administrator or employees
 
 

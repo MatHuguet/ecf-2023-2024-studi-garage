@@ -1,7 +1,7 @@
 <?php
 
 require './scripts/const.php';
-//require_once './scripts/adminConst.php';
+require './scripts/adminConst.php';
 
 try {
     $dbcon = new PDO(DSN);
@@ -25,7 +25,7 @@ try {
     $adminAddQuery->bindValue(':adminemail', ADMIN_MAIL);
     $adminAddQuery->bindValue(':adminpass', password_hash(ADMIN_PASS, PASSWORD_DEFAULT));
     $adminAddQuery->execute();
-
+/*
     //Insertion test employé :
     $employeeTestQ = "INSERT IGNORE INTO administrators(
        adminId, 
@@ -48,7 +48,7 @@ try {
     $employeeTestAdd->bindValue(':firstname', strtolower('John'));
     $employeeTestAdd->bindValue(':password', password_hash('j0hnD0e', PASSWORD_DEFAULT));
     $employeeTestAdd->execute();
-
+*/
 } catch (PDOException $exception) {
     echo 'Erreur :' . $exception->getMessage();
 }
