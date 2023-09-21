@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="./styles/footer.css">
     <link rel="stylesheet" href="./styles/button.css">
     <link rel="stylesheet" href="./styles/contact-form.css">
+    <link rel="shortcut icon" href="#" />
 
     <title>Contactez-nous !</title>
 </head>

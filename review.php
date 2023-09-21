@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="./styles/footer.css">
     <link rel="stylesheet" href="./styles/button.css">
     <link rel="stylesheet" href="./styles/review.css">
+    <link rel="shortcut icon" href="#" />
 
     <title>Avis clients</title>
 </head>

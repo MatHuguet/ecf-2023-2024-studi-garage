@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="./styles/index-page-content.css">
     <link rel="stylesheet" href="./styles/footer.css">
     <link rel="stylesheet" href="./styles/button.css">
+    <link rel="shortcut icon" href="#" />
 
     <title>Nos véhicules d'occasion</title>
 </head>

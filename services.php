@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="./styles/services.css">
     <link rel="stylesheet" href="./styles/footer.css">
     <link rel="stylesheet" href="./styles/button.css">
+    <link rel="shortcut icon" href="#" />
 
     <title>Garage Vincent Parrot - Services</title>
 </head>

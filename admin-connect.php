@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="./styles/button.css">
     <link rel="stylesheet" href="./styles/addreview.css">
     <link rel="stylesheet" href="./styles/admin-styles/connect-form-style.css">
+    <link rel="shortcut icon" href="#" />
 
     <title>Connexion administrateurs</title>
 </head>

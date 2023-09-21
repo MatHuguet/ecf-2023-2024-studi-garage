@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="../styles/admin-styles/admin-header.css"/>
     <link rel="stylesheet" href="../styles/admin-styles/admin-select.css"/>
+    <link rel="shortcut icon" href="#" />
     <title>Page Administrateur</title>
 </head>
 <body>

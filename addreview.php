@@ -19,15 +19,15 @@
     <link rel="stylesheet" href="./styles/footer.css">
     <link rel="stylesheet" href="./styles/button.css">
     <link rel="stylesheet" href="./styles/addreview.css">
-
+    <link rel="shortcut icon" href="#" />
     <title>Donnez votre avis</title>
 </head>
 
 <body>
 
     <?php
-require_once './components/header.php';
+require './components/header.php';
 
-require_once './components/add-review-form.php';
+require './components/add-review-form.php';
 
-require_once './components/footer.php';
+require './components/footer.php';

@@ -1,14 +1,15 @@
 <?php 
 //Import du script de traitement des données avis de la bdd
 
-require './scripts/dbinit.php';
-
-
-//Connect with a new PDO to the database created above if not exists :
+require './scripts/const.php';
 
 try {
-    /*$dbco = new PDO(DSN . ';charset=utf8mb4', DB_USER, DB_PASS);
-    $dbco->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);*/
+
+    $dbco = new PDO(DSN);
+
+    $dbco->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    $dbco->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_BOTH);
+
     $reviewReq = $dbco->query("SELECT * FROM user_reviews WHERE reviewIsValid = 1");
     $userReviews = $reviewReq->fetchAll(PDO::FETCH_BOTH);
 }
