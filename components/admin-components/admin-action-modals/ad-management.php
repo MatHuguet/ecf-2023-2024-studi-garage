@@ -5,7 +5,7 @@ $maxDateFormat = date('Y-m');
 /*------display actual adds----------------*/
 //new connection:
 try {
-    $dbco = new PDO(DSN, DB_USER, DB_PASS);
+    $dbco = new PDO(DSN);
     //CREATE table adds if not exists :
 
     $carsSql = "CREATE TABLE if not exists vehicles(
@@ -16,9 +16,9 @@ try {
          vehicleColor VARCHAR(25),
          motorType VARCHAR(25) NOT NULL,
          vehicleReleaseDate VARCHAR(12) NOT NULL,
-         kilometers INT(8) NOT NULL,
-         vehicleDescription TEXT(500) NOT NULL,
-         vehiclePrice INT(60) NOT NULL 
+         kilometers INT NOT NULL,
+         vehicleDescription TEXT NOT NULL,
+         vehiclePrice INT NOT NULL 
 )";
     $dbco->exec($carsSql);
 

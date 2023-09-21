@@ -4,7 +4,7 @@
         require '../const.php';
 
         //new connection :
-        $dbco = new PDO(DSN, DB_USER, DB_PASS);
+        $dbco = new PDO(DSN);
         $dbco->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
         if (isset($_POST['submit'])) {

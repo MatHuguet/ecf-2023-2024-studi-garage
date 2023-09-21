@@ -4,7 +4,7 @@ require '../const.php';
 //new connexion :
 if (isset($_POST['submit'])) {
     try {
-        $dbco = new PDO(DSN, DB_USER, DB_PASS);
+        $dbco = new PDO(DSN);
         $employeeEditMail = $_POST['empl-email'];
         //SELECT UUID with email (PK) :
         $getUUID = $dbco->prepare("SELECT adminId FROM administrators WHERE adminEmail = :adminEmail");

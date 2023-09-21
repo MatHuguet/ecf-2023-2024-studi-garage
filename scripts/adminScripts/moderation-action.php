@@ -13,7 +13,7 @@ if (isset($_POST['submit'])) {
     var_dump($_POST);
 
     try {
-        $dbco = new PDO(DSN, DB_USER, DB_PASS);
+        $dbco = new PDO(DSN);
         $userReviewEmail = $_POST['review-email'];
         $reviewStatus = $_POST['review-status'];
 
@@ -53,20 +53,20 @@ if (isset($_POST['submit'])) {
         }
 
         echo "<script>alert('L\'avis à bien été traité.')</script>";
-        /*
+
         sleep(2);
         header('Location:../../admin-pages/administrators-home-page.php');
         exit();
-        */
+
 
     } catch (PDOException $exception) {
-/*
+
 
         echo 'Une erreur est survenue : ' . $exception->getMessage();
         echo "<script>alert('Une erreur est survenue.')</script>";
         header('Location:../../admin-pages/administrators-home-page.php');
         exit();
-*/
+
 
     }
 }

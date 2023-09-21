@@ -2,6 +2,7 @@
 //FORM DATA GET and INSERT
 require '../const.php';
 if (isset($_POST['submit'])) {
+    $adminid = uniqid('ad', true);
 $getEmployeeName = $_POST['nom'];
 echo $getEmployeeName;
 $getEmployeeFirstName = $_POST['prenom'];
@@ -27,7 +28,7 @@ adminEmail,
 adminPassword,
 adminRole)
 VALUES(
-UUID(),
+:adminid,
 :name,
 :firstname,
 :email,
@@ -38,6 +39,7 @@ UUID(),
 
 )";
 $setEmployeeStmt = $dbcon->prepare($setEmployeeSql);
+$setEmployeeStmt->bindValue('adminid', $adminid);
 $setEmployeeStmt->bindValue('name', htmlentities(ucfirst(strtolower($getEmployeeName))));
 $setEmployeeStmt->bindValue('firstname', htmlentities(ucfirst(strtolower($getEmployeeFirstName))));
 $setEmployeeStmt->bindValue('email', htmlspecialchars(strtolower($getEmployeeEmail)));
@@ -53,4 +55,3 @@ echo 'Erreur : ' . $exception->getMessage();
 }
 }
 
-?>
