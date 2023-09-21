@@ -10,7 +10,7 @@ try {
 }
 
 
-$getEmployeeSql = "SELECT adminName, adminFirstName, adminEmail FROM administrators WHERE adminRole = 'employee'";
+$getEmployeeSql = "SELECT adminname, adminfirstName, adminemail FROM administrators WHERE adminrole = 'employee'";
 $getEmployees = $dbcon->query($getEmployeeSql)->fetchAll();
 /*
 echo '<pre>';
@@ -20,9 +20,9 @@ echo '</pre>';
 /*---------DISPLAYING EMPLOYEES ACCOUNT ----------------------------------------------------- */
 
 foreach ($getEmployees as $employeeDatas) {
-    $employeeName = $employeeDatas['adminName'];
-    $employeeFirstName = $employeeDatas['adminFirstName'];
-    $employeeEmail = $employeeDatas['adminEmail'];
+    $employeeName = $employeeDatas['adminname'];
+    $employeeFirstName = $employeeDatas['adminfirstname'];
+    $employeeEmail = $employeeDatas['adminemail'];
 
 ?>
 <!---------------EMPLOYEES INFOS -->
