@@ -23,16 +23,16 @@ try {
 
     <?php
     foreach ($getReviews as $review) {
-        $reviewUserName = $review['userName'];
-        $reviewUserFirstName = $review['userFirstName'];
-        $userEmail = $review['userEmail'];
-        $reviewNote = $review['reviewNote'];
-        $isRead = $review['reviewIsRead'];
-        $isValid = $review['reviewIsValid'];
-        $reviewText = $review['reviewText'];
-        $userVisitDate = $review['userVisitDate'];
-        $reviewDate = $review['reviewDate'];
-        $reviewId = $review['reviewId'];
+        $reviewUserName = $review['username'];
+        $reviewUserFirstName = $review['userfirstname'];
+        $userEmail = $review['useremail'];
+        $reviewNote = $review['reviewnote'];
+        $isRead = $review['reviewisread'];
+        $isValid = $review['reviewisvalid'];
+        $reviewText = $review['reviewtext'];
+        $userVisitDate = $review['uservisitdate'];
+        $reviewDate = $review['reviewdate'];
+        $reviewId = $review['reviewid'];
 
         //calcul du timestamp pour afficher les review à traiter en retard :
         $dateFormat = 'd-m-Y';

@@ -39,15 +39,15 @@ catch (PDOException $exception) {
             echo "<div class='review-container'>
            <div class='review-infos-container'
             <div class='review-user-name'>
-                <p class='review-name'>" . ucfirst($review['userFirstName']) . "</p>
-                <p class='review-name'>" . ucfirst(substr($review['userName'], 0, 1)) . ". </p>
+                <p class='review-name'>" . ucfirst($review['userfirstname']) . "</p>
+                <p class='review-name'>" . ucfirst(substr($review['username'], 0, 1)) . ". </p>
             </div>
 
     <div class='review-date'>
             <p>le " . $review['reviewDate'] . "</p>
           </div>
     <div class='review-note'>
-            <p class='rate' id='rate'>" . $review['reviewNote'] . "</p>
+            <p class='rate' id='rate'>" . $review['reviewnote'] . "</p>
             <p>/5</p>
         </div>
         <div class='stars-ratio-container'>
@@ -55,7 +55,7 @@ catch (PDOException $exception) {
             <img class='stars-img' src='src/images/stars.png' alt='stars ratio'/>
         </div>
     </div>
-    <div class='review-text'>" . "\" " . $review['reviewText'] . " \"" . "</div>
+    <div class='review-text'>" . "\" " . $review['reviewtext'] . " \"" . "</div>
     </div>";
         }
 
