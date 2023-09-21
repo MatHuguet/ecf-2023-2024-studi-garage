@@ -8,7 +8,7 @@ try {
     $dbcon->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     $dbcon->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_BOTH);
     //get datas
-    $getReviewsSql = "SELECT * FROM user_reviews";
+    $getReviewsSql = "SELECT reviewid, username, userfirstname, useremail, reviewnote, reviewdate, reviewtext, reviewisvalid, reviewisread FROM user_reviews";
     $getReviews = $dbcon->query($getReviewsSql)->fetchAll();
 
 ?>

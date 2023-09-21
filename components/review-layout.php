@@ -10,7 +10,7 @@ try {
     $dbco->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     $dbco->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_BOTH);
 
-    $reviewReq = $dbco->query("SELECT * FROM user_reviews WHERE reviewIsValid = 1");
+    $reviewReq = $dbco->query("SELECT reviewid, username, userfirstname, useremail, reviewnote, reviewdate, reviewtext, reviewisvalid, reviewisread FROM user_reviews WHERE reviewIsValid = TRUE");
     $userReviews = $reviewReq->fetchAll(PDO::FETCH_BOTH);
 }
 catch (PDOException $exception) {
