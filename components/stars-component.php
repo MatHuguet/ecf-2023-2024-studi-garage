@@ -49,9 +49,16 @@ $rate = 1;
     $rateSum = $rateFetch[0];
     //query for global ratio
     $rateQ = $dbco->query("SELECT reviewNote FROM user_reviews")->fetchAll();
-    $rateCount = count($rateQ);
-    //Putting rate value in $globalRte variable :
-    $globalRate = $rateSum / $rateCount;
+
+    if (count($rateQ == 0 || count($rateQ === null || $rateQ === ''))) {
+        $globalRate = 1;
+    } else {
+        $rateCount = count($rateQ);
+        //Putting rate value in $globalRte variable :
+        $globalRate = $rateSum / $rateCount;
+    }
+
+
 
 
         echo "<div class='review-container'>
